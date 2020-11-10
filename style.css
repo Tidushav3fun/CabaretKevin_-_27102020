@@ -1,0 +1,19 @@
+/* Général */
+
+* {
+    font-family: 'Raleway';
+}
+
+.bold {
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+#resultat a {
+    text-decoration: none;
+    color: black;
+}
