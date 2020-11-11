@@ -4,10 +4,6 @@
     font-family: 'Raleway', "Arial Black", Arial, Verdana, sans-serif;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 .bold {
     font-weight: bold;
     margin-left: 3px;
@@ -17,6 +13,10 @@ h2 {
     font-size: 20px;
 }
 
+a {
+    text-decoration: none;
+}
+
 #resultat a {
     text-decoration: none;
     color: black;
@@ -24,66 +24,76 @@ h2 {
 
 /* Menu de naviguation */
 
-header {
+header nav {
+    flex-grow: 1;
     display: flex;
-    width: 250px;
+    justify-content: end;
+    align-items: flex-start;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 90%;
-}
-
-header img {
-    display: flex;
-    height: 40px;
-}
-
-header .inscrire {
-    display: flex;
-    font-weight: bold;
-    position: relative;
-    top: -45px;
-    left: -150px;
-}
-
-header .inscrire:hover {
-    color: #0065FC;
-    border-top: solid 3px #ffffff;
 }
 
 #navigation {
     display: flex;
-    padding: 0;
+    flex-direction: row;
+    margin-right: 30px;
+    align-content: center;
 }
 
-#navigation li {
+header {
     display: flex;
-    width: 100%;
-    padding-bottom: 10px;
-    margin: 0;
-    border-bottom: solid 5px #f2f2f2;
 }
 
 header nav {
     display: flex;
-    padding:0;
+    margin-right: 0;
 }
 
-header nav ul li a {
+header ul li {
     display: flex;
-    color: black;
-    width: 100%;
-    padding : 50px 10px 0 10px;
+}
+
+header img {
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+#navigation li {
+    color: #0065FC;
+    list-style: none;
+    padding: 10px 30px;
+    border-top: solid 3px #ffffff
+}
+
+#navigation li a {
+    font-size: 14px;
+    text-decoration: none;
+    padding-top: 25px;
+    margin-right: 20px;
 }
 
 #navigation li a:hover {
-    color: #0065FC;
+    color: #f2f2f2;
 }
 
-
 #navigation li:hover {
-    color: #0065FC;
-    border-top: solid 3px #ffffff;
-    border-bottom: solid 5px #0065FC;
+    border-top: solid 3px #0065FC;
+
+}
+
+.inscrire {
+    display: flex;
+    font-weight: bold;
+    position: relative;
+    padding: 32px 0 0 15px;
+    top: 16px;
+    right:35px;
+    border-top: solid 3px #ffffff
+}
+
+.inscrire:hover {
+    color: #f2f2f2;
+    border-top: solid 3px #0065FC;
 }
 
 /* Texte de présentation */
@@ -93,18 +103,11 @@ header nav ul li a {
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
-    margin: 10px 0 0 1%;
+    margin-left: 1%;
 }
 
 .introduction h1 {
     margin-bottom: 0;
-    margin-top: 0;
-    width: 90%;
-    font-size: 20px;
-}
-
-.introduction p {
-    font-size: 15px;
 }
 
 
@@ -113,7 +116,7 @@ header nav ul li a {
 .barre-recherche {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
 }
 
@@ -123,33 +126,23 @@ header nav ul li a {
     background-color: #f2f2f2;
     text-align: center;
     border: 1px solid #f2f2f2;
-    padding: 18px 23px 18px 23px;
-    border-top-left-radius: 15px 15px;
-    border-bottom-left-radius: 15px 15px;
-    margin-left: 1%;
-    font-size: 20px;
-}
-
-.barre-recherche .rechercheHD {
-    display: none;
-}
-
-.barre-recherche .rechercheSD {
-    display: flex;
-    align-self: center;
-    margin: 0;
-    padding: 23px;
-    border-top-right-radius: 10px 10px;
-    border-bottom-right-radius: 10px 10px;
+    padding: 10px;
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
-    background-color: #0065FC;
-    border-color: #0065FC;
-    color: #ffffff;
+    margin-left: 1%;
 }
 
 .recherche {
-    width: 80%;
+    display: flex;
+    font-weight: bold;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+    border-top: 1px solid #f2f2f2;
+}
+
+.barre-recherche .rechercheSD {
+    display: none;
 }
 
 .bouton {
@@ -164,6 +157,7 @@ header nav ul li a {
 form {
     display: flex;
     flex-direction: row;
+    width: 80%;
 }
 
 /* Filtres */
@@ -178,17 +172,12 @@ form {
 .filtres {
     display: flex;
     font-weight: bold;
-    flex-wrap: wrap;
+    align-self: center;
     border: solid #ffffff 1px;
     text-decoration: none;
-    justify-content: flex-start;
+    justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
-}
-
-.filtres h2 {
-    display: flex;
-    width: 100%;
 }
 
 .filtres p:hover {
@@ -197,14 +186,13 @@ form {
 
 .filtremarseille {
     display: flex;
-    padding: 0;
 }
 
 .filtres i {
     position: relative;
     top: 14px;
     left: 20px;
-    height: 19px;
+    height: 15px;
 }
 
 .filtres p {
@@ -212,8 +200,7 @@ form {
     justify-content: center;
     border: solid 1px #d9d9d9;
     font-size: 14px;
-    padding: 12px 15px 12px 25px;
-    margin-bottom: 5px;
+    padding: 10px 15px 10px 25px;
     text-align: center;
     border-top-right-radius: 180px;
     border-bottom-right-radius: 180px;
@@ -232,7 +219,7 @@ form {
 }
 
 .familial {
-    padding: 12px 13px 10px 13px;
+    padding: 11px 13px 11px 13px;
     color: #0065FC;
     background-color: #93baef;
     border-radius: 90%;
@@ -240,8 +227,9 @@ form {
 
 .info .filtre-info {
     display: flex;
-    padding: 6px 10px 6px 10px;
-    margin-bottom: 15px;
+    justify-content: center;
+    align-self: center;
+    padding: 8px 10px 8px 10px;
     color: #0065FC;
     border: solid 1px #d9d9d9;
     border-radius: 90%;
@@ -254,13 +242,12 @@ form {
     width: 100%;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 15px 0 15px 0;
+    margin-bottom: 15px;
 }
 
 .info p {
     display: flex;
-    width: 100%;
-    font-size: 14px;
+    margin-left: 5px;
 }
 
 /* Logements sur Marseille */
@@ -268,6 +255,7 @@ form {
 #marseille .etoiles {
     display: flex;
     flex-direction: row;
+    margin: 0 0 5px 5px;
 }
 
 .etoiles {
@@ -276,8 +264,9 @@ form {
 
 .etoilesb {
     color: #0065fc;
-    font-size: 14px;
+    font-size: 15px;
 }
+
 
 #resultat {
     display: flex;
@@ -289,11 +278,11 @@ form {
 
 #marseille {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 15px;
     background-color: #ffffff;
     border: solid 1px #ffffff;
-    width: 100%;
+    width: 90%;
     padding: 0;
 }
 
@@ -329,7 +318,7 @@ form {
     display: flex;
     border: solid 5px #ffffff;
     margin: 15px 0 0 0;
-    width: 90%;
+    width: 40%;
     height: 30%;
     flex-direction: column;
     background-color: #ffffff;
@@ -346,12 +335,13 @@ form {
 .iconepopulaire {
     position: relative;
     top: 3px;
-    left: 60px;
+    left: 90px;
 }
 
 #populaire {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     width: 100%;
     height: 100%;
     border: solid 1px #f2f2f2;
@@ -362,7 +352,8 @@ form {
 
 #populaire h2 {
     display: flex;
-    margin-left: 0;
+    width: 100%;
+    margin-left: 20px;
 }
 
 #populaire a .textep {
@@ -402,14 +393,13 @@ form {
     display: flex;
     flex-direction: row;
     height: 18%;
-    min-width: 90%;
+    width: 40%;
     border: solid 5px #ffffff;
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 1px 5px 5px 0px #f2f2f2;
     margin-left: 15px;
 }
-
 
 /* Activités sur Marseille */
 
@@ -424,8 +414,8 @@ form {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    width: 95%;
-    margin: 0 0 0 0;
+    width: 80%;
+    margin: 0 0 0 65px;
     padding-bottom: 0;
 }
 
@@ -442,7 +432,7 @@ form {
     display: flex;
     justify-content: start;
     width: 100%;
-    max-height: 150px;
+    max-height: 400px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     overflow: hidden;
@@ -497,42 +487,42 @@ form {
     min-width: 90%;
 }
 
+
 /* Footer du site */
 
 .footer {
     display: flex;
     width: 100%;
     background-color: #f2f2f2;
-    flex-direction: column;
-    align-self: start;
-    margin: 0;
-    padding: 0 0 15px 0;
-}
-
-.footer div {
-    display: flex;
-    margin: 10px 0 0 0;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 80%;
+    margin-top: 50px;
+    flex-direction: row;
+    padding-bottom: 10px;
 }
 
 footer h2 {
     display: flex;
     font-size: 14px;
-    margin-left: 20px;
+    margin-left: 45px;
     font-weight: bold;
     margin-bottom: 2px;
 }
 
+footer div {
+    margin-top: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
 footer ul {
-    padding-left: 15px;
+    margin-top: 5px;
 }
 
 footer li {
     display: flex;
     color: black;
     list-style: none;
+    padding: 5px;
 }
 
 footer li a {
