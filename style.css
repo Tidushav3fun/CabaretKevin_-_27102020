@@ -218,7 +218,6 @@ form {
     left: 0;
 }
 
-
 .familial {
     padding: 11px 13px 11px 13px;
     color: #0065FC;
@@ -243,6 +242,7 @@ form {
     width: 100%;
     flex-direction: row;
     justify-content: flex-start;
+    margin-bottom: 15px;
 }
 
 .info p {
@@ -408,7 +408,7 @@ form {
 #activite h2 {
     display: flex;
     width: 100%;
-    margin-left: 40px;
+    margin: 15px 0 5px 40px;
 }
 
 .activite-marseille {
@@ -504,6 +504,7 @@ form {
     background-color: #f2f2f2;
     margin-top: 50px;
     flex-direction: row;
+    padding-bottom: 10px;
 }
 
 footer div {
