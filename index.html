@@ -29,14 +29,14 @@
             En plein centre ville ou en pleine nature
         </p>
     </section>
-    <section class="barre-recherche">
+    <div class="barre-recherche">
         <i class="fas fa-map-marker-alt position"></i>
-        <form placeholder="Marseille,France" method="post" action="traitement.php">
+        <form data-placeholder="Marseille,France" method="post" action="traitement.php">
             <input class="recherche" type="search" name="Ville" value="Marseille,France" />
             <span class="rechercheHD"><input class="bouton" type="submit" value="Rechercher" /></span>
             <i class="fas fa-search rechercheSD"></i>
         </form>
-    </section>
+    </div>
     <section class="filtres">
         <h2>Filtres</h2>
         <div class="filtremarseille">
@@ -124,7 +124,7 @@
                     <p>Nuit à partir de <span class="bold">25€</span></p>
                     <span class="etoiles"><i class="fas fa-star etoilesb"></i><i class="fas fa-star etoilesb"></i><i
                             class="fas fa-star etoilesb"></i><i class="fas fa-star etoilesb"></i><i
-                            class="fas fa-star"></i>
+                            class="fas fa-star etoilesb"></i>
                     </span>
                 </div>
             </a>
@@ -146,17 +146,17 @@
                     <p>Nuit à partir de 76<span class="bold">€</span></p>
                     <span class="etoiles"><i class="fas fa-star etoilesb"></i><i class="fas fa-star etoilesb"></i><i
                             class="fas fa-star etoilesb"></i><i class="fas fa-star etoilesb"></i><i
-                            class="fas fa-star etoilesb"></i>
+                            class="fas fa-star"></i>
                     </span>
                 </div>
             </a>
+        </div>
     </section>
-
 
     <div id="activite">
         <h2>Activités à Marseille</h2>
     </div>
-    <section class="activite-marseille">
+    <div class="activite-marseille">
         <figure class="elementactivite1">
             <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" />
             <figcaption>Vieux Port</figcaption>
@@ -188,13 +188,13 @@
 
         </div>
 
-    </section>
+    </div>
 
     <footer>
         <section class="footer">
             <div class="a-propos">
+                <h2>A propos</h2>
                 <ul>
-                    <li><a href="#" title="A propos"><span class="bold">A propos</span></a></li>
                     <li><a href="#" title="Fonctionnement">Fonctionnement du site</a></li>
                     <li><a href="#" title="Conditions">Conditions générales de vente</a></li>
                     <li><a href="#" title="Données">Données et confidentialité</a></li>
@@ -202,16 +202,16 @@
             </div>
 
             <div class="hebergement">
+                <h2>Nos hébergements</h2>
                 <ul>
-                    <li><a href="#" title="Hébergement"><span class="bold">Nos hébergements</span></a></li>
                     <li><a href="#" title="Charte">Charte qualité</a></li>
                     <li><a href="#" title="Hôtel">Soumettre votre hôtel</a></li>
                 </ul>
             </div>
 
             <div class="assistance">
+                <h2>Assistance</h2>
                 <ul>
-                    <li><a href="#" title="Assistance"><span class="bold">Assistance</span></a></li>
                     <li><a href="#" title="Aide">Centre d'aide</a></li>
                     <li><a href="#" title="Contact">Nous contacter</a></li>
                 </ul>
