@@ -27,8 +27,7 @@ a {
 header nav {
     flex-grow: 1;
     display: flex;
-    justify-content: end;
-    align-items: flex-start;
+    justify-content: flex-end;
     flex-direction: row;
 }
 
