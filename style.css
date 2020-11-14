@@ -17,15 +17,15 @@ a {
     text-decoration: none;
 }
 
-#resultat a {
-    text-decoration: none;
-    color: black;
-}
-
 body {
     overflow-x: hidden;
 }
 
+
+#resultat a {
+    text-decoration: none;
+    color: black;
+}
 
 /* Menu de naviguation */
 
@@ -287,15 +287,15 @@ form {
     border: solid 1px #f2f2f2;
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding: 25px;
+    padding: 20px;
     margin: 0 10px 15px 10px;
 }
 
 #marseille h2 {
     display: flex;
     width: 100%;
-    height: 5%;
-    margin: 10px 0 0 0;
+    margin: 10px 0 0 5px;
+    padding:0;
 }
 
 #marseille h3 {
@@ -339,7 +339,7 @@ form {
     flex-direction: column;
     background-color: #ffffff;
     border-radius: 20px;
-    margin-top: 5%;
+    margin-top: 20px;
     box-shadow: 1px 3px 5px 0px #f2f2f2;
 }
 
@@ -357,7 +357,7 @@ form {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 30%;
-    height: 770px;
+    height: 722px;
     border: solid 1px #f2f2f2;
     background-color: #f2f2f2;
     border-radius: 20px;
@@ -366,7 +366,7 @@ form {
 
 #populaire h2 {
     display: flex;
-    margin: 32px 0 5px 55px;
+    margin: 27px 0 15px 25px;
 }
 
 #populaire h3 {
@@ -382,7 +382,7 @@ form {
 }
 
 #populaire img {
-    min-width: 180px;
+    min-width: 200px;
     width: 180px;
     height: 180px;
     border-top-left-radius: 20px;
@@ -395,12 +395,12 @@ form {
     display: flex;
     border: solid 5px #ffffff;
     max-width: 400px;
-    height: 23%;
     flex-direction: row;
     background-color: #ffffff;
     border-radius: 20px;
-    margin: 10px 10px 0 10%;
+    margin: 5px 10px 10px 10px;
     box-shadow: 1px 5px 5px 0px #f2f2f2;
+    padding-left:20px;
 }
 
 #populaire .textep {
@@ -427,6 +427,7 @@ form {
     justify-content: space-between;
     width: 90%;
     height: 500px;
+    margin-left: 10px;
 }
 
 .activite-marseille figcaption {
@@ -484,7 +485,7 @@ form {
     height: 40%;
     border: solid 1px #f2f2f2;
     border-radius: 20px;
-    box-shadow: 1px 5px 5px 0px #f2f2f2;
+    box-shadow: 5px #f2f2f2;
     ;
 }
 

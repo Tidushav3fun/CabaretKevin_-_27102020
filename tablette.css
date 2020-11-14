@@ -406,7 +406,7 @@ form {
 #activite h2 {
     display: flex;
     width: 80%;
-    margin-left: 5%;
+    margin-left: 20px;
 }
 
 .activite-marseille {
