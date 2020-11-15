@@ -398,6 +398,7 @@ form {
     flex-direction: row;
     height: 18%;
     width: 40%;
+    max-width: 80%;
     border: solid 5px #ffffff;
     background-color: #ffffff;
     border-radius: 20px;

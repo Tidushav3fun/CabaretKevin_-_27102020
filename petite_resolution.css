@@ -404,7 +404,7 @@ form {
     display: flex;
     flex-direction: row;
     height: 18%;
-    min-width: 80%;
+    min-width:80%;
     max-width:80%;
     border: solid 5px #ffffff;
     background-color: #ffffff;
