@@ -22,6 +22,8 @@ h2 {
     color: black;
 }
 
+
+
 /* Menu de naviguation */
 
 header {
@@ -362,7 +364,7 @@ form {
 
 #populaire h2 {
     display: flex;
-    margin-left: 0;
+    margin-left: 25px;
 }
 
 #populaire a .textep {
@@ -402,12 +404,13 @@ form {
     display: flex;
     flex-direction: row;
     height: 18%;
-    min-width: 90%;
+    min-width: 80%;
+    max-width:80%;
     border: solid 5px #ffffff;
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 1px 5px 5px 0px #f2f2f2;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 
