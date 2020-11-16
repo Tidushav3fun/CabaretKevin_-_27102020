@@ -44,7 +44,7 @@ header .inscrire {
     font-weight: bold;
     position: relative;
     top: -45px;
-    left: -150px;
+    left: -180px;
 }
 
 header .inscrire:hover {
@@ -354,6 +354,7 @@ form {
 #populaire {
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
     width: 100%;
     height: 100%;
     border: solid 1px #f2f2f2;
@@ -383,10 +384,11 @@ form {
 
 #populaire p {
     display: flex;
-    font-size: 14px;
+    font-size: 12px;
     flex-wrap: wrap;
     margin: 0;
     width: 100%;
+    margin-bottom: 0;
 }
 
 #populaire img {
@@ -405,7 +407,7 @@ form {
     flex-direction: row;
     height: 18%;
     min-width:80%;
-    max-width:80%;
+    max-width:85%;
     border: solid 5px #ffffff;
     background-color: #ffffff;
     border-radius: 20px;
